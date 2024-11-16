@@ -2,5 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/example/public_html/taraswww777.dev-2
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - npm ci
+    - npm run deploy
+    - /bin/cp ./out $DEPLOYPATH -r
+    - /bin/cp ./deploy $DEPLOYPATH -r
