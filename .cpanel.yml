@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/taraswww777.dev-2
+    - export DEPLOYPATH=/var/www/u1384230/repositories/taraswww777.dev
     - npm ci
     - npm run deploy
     - /bin/cp ./out $DEPLOYPATH -r
